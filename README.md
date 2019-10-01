@@ -1,2 +1,3 @@
-# protocols-workshop
-Workshop explaining basic networking and protocols
+# Workshop
+
+Basic networking and protocols.
