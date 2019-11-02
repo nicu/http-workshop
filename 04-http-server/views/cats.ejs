@@ -1,0 +1,18 @@
+<form action="/cats" method="post">
+  <input type="text" name="name" value="" placeholder="Enter a cat name" />
+  <input type="submit" />
+</form>
+
+<ul>
+  <% data.items.map(cat => { %>
+  <li><%= cat.name %></li>
+  <% }) %>
+</ul>
+
+<% for (let i = 1; i <= data.total; i++) { %> 
+  <% if (i === data.page) { %>
+    <span><%= i %></span>
+  <% } else { %>
+    <a href="/cats?page=<%= i %>"><%= i %></a>
+  <% } %> 
+<% } %>
