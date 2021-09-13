@@ -8,7 +8,7 @@ const client = new net.Socket();
 client.connect(PORT, HOST, () => {
   console.log('Connected to echo server');
   client.write('Echo');
-  client.end();
+  // client.end();
 });
 
 client.on('data', data => {
